@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  transition: all 0.2s;
+}
+
+.side-nav::-webkit-scrollbar,
+.sorting-div-mobiles::-webkit-scrollbar {
+  appearance: none;
+  width: 5px;
+  height: 5px;
+  @apply bg-[#e6eef5] dark:bg-main-light;
+}
+.side-nav::-webkit-scrollbar-thumb,
+.sorting-div-mobiles::-webkit-scrollbar-thumb {
+  @apply bg-[#8bccfd] dark:bg-main-dark;
+}
+
+body::-webkit-scrollbar {
+  height: 5px;
+  @apply w-2 appearance-none bg-[#f1f3f6] dark:bg-main-dark;
+}
+body::-webkit-scrollbar-thumb {
+  @apply rounded-lg bg-main-dark dark:bg-main-darker;
+}
+
+.dropshadowimgs {
+  filter: drop-shadow(0px 0px 40px white);
+}

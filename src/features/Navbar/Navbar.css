@@ -1,0 +1,9 @@
+.side-nav::-webkit-scrollbar {
+  appearance: none;
+  height: 5px;
+  width: 5px;
+  @apply bg-[#e6eef5] dark:bg-main-light;
+}
+.side-nav::-webkit-scrollbar-thumb {
+  @apply bg-[#8bccfd] dark:bg-main-dark;
+}
